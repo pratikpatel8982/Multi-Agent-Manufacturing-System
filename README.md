@@ -42,83 +42,108 @@ The system consists of the following agents:
 
 ## 🔄 Workflow
 
-```text
 User Query
-   ↓
+↓
 Coordinator Agent
-   ↓
+↓
 Researcher Agent → Data Collection
-   ↓
+↓
 Analyst Agent → Evaluation / Comparison
-   ↓
+↓
 Writer Agent → Structured Output
-   ↓
+↓
 User Dashboard
 
-✨ Features
-👤 User Features
 
-Ask manufacturing-related questions
+---
 
-Supplier sourcing
+## ✨ Features
 
-Cost comparison
+### 👤 User Features
 
-AI-generated reports
+- Ask manufacturing-related questions  
+- Supplier sourcing  
+- Cost comparison  
+- AI-generated reports  
+- Query history  
+- Download reports (PDF / CSV)  
 
-Query history
+---
 
-Download reports (PDF/CSV)
+### 🛠 Admin Features
 
-🛠 Admin Features
+- User management  
+- Query monitoring  
+- Report management  
+- Agent performance tracking  
+- System configuration  
 
-User management
+---
 
-Query monitoring
-
-Report management
-
-Agent performance tracking
-
-System configuration
-
-🖥 Web Interface
+## 🖥 Web Interface
 
 The platform includes:
 
-✔ Landing Page
-✔ Login / Signup
-✔ User Dashboard
-✔ Query History
-✔ Reports Page
-✔ Admin Dashboard
+- ✅ Landing Page  
+- ✅ Login / Signup  
+- ✅ User Dashboard  
+- ✅ Query History  
+- ✅ Reports Page  
+- ✅ Admin Dashboard  
 
-🧰 Tech Stack
-🔹 Backend
+---
 
-Python
+## 🧰 Tech Stack
 
-FastAPI / Flask
+### 🔹 Backend
 
-LangChain / CrewAI
+- Python  
+- FastAPI / Flask  
+- LangChain / CrewAI  
 
-🔹 Frontend
+---
 
-HTML / CSS / JavaScript
-(or React for modern UI)
+### 🔹 Frontend
 
-🔹 AI / LLM
+- HTML / CSS / JavaScript  
+*(or React for modern UI)*  
 
-OpenAI API / Groq / Gemini (Free Tier)
+---
 
-🔹 Database
+### 🔹 AI / LLM
 
-SQLite / PostgreSQL
+- OpenAI API / Groq / Gemini (Free Tier)
 
-🔹 Deployment
+---
 
-Render / Railway / Replit (Free Tier)
+### 🔹 Database
 
+- SQLite / PostgreSQL  
+
+---
+
+### 🔹 Deployment
+
+- Render / Railway / Replit (Free Tier)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/yourusername/multi-agent-manufacturing.git
+cd multi-agent-manufacturing
+
+python -m venv venv
+
+# Activate environment
+# Windows:
+venv\Scripts\activate
+
+# Linux / Mac:
+source venv/bin/activate
+
+pip install -r requirements.txt
 # Clone repository
 git clone https://github.com/Pransu-singh/Multi-Agent-Manufacturing-System.git
 
@@ -134,17 +159,19 @@ venv\Scripts\activate     # (Windows)
 pip install -r requirements.txt
 
 📁 Project Structure
+multi-agent-manufacturing/
+│
 ├── backend/
 │   ├── agents/
 │   ├── tools/
-│   ├── main.py
+│   └── main.py
 │
 ├── frontend/
 │   ├── index.html
 │   ├── dashboard.html
-│   ├── styles.css
+│   └── styles.css
 │
 ├── database/
-│
 ├── requirements.txt
 └── README.md
+
