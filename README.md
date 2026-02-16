@@ -1,38 +1,150 @@
-# 🏭 Multi-Agent Manufacturing System
+# 🏭 Multi-Agent Manufacturing System (AAI-32)
 
-A collaborative AI architecture featuring specialization and automated hand-off protocols. This system utilizes a **Researcher Agent** for supplier sourcing and a **Writer Agent** for technical synthesis, demonstrating advanced inter-agent communication.
+AI-powered collaborative manufacturing assistant built using **Multi-Agent Architecture**.  
+This project demonstrates how specialized AI agents cooperate to perform supplier sourcing, analysis, and structured report generation.
 
+---
 
+## 📌 Project Information
 
-## 🎯 Project Overview
-This project implements a "Producer-Consumer" pattern in AI. By decoupling data discovery from data formatting, the system achieves higher accuracy and better formatting than a single-agent prompt.
+- **Division:** D7  
+- **Group:** Group 09D7  
+- **Project No:** AAI-32  
+- **Problem Statement:** Multi-Agent Manufacturing System  
 
-- **Researcher Agent:** Scours the web (via DuckDuckGo) to find verified manufacturing suppliers.
-- **Writer Agent:** Consumes the researcher's raw findings and formats them into a professional Markdown Procurement Report.
-- **Hand-off Protocol:** Uses a sequential state-management flow where Task B's context is explicitly derived from Task A's output.
+---
 
-## 🛠️ Tech Stack (100% Free)
-- **Framework:** [CrewAI](https://github.com/joaomdmoura/crewai)
-- **LLM:** [Llama 3 (via Groq)](https://groq.com/) - High-speed, free-tier inference.
-- **Search Tool:** [DuckDuckGo Search](https://pypi.org/project/duckduckgo-search/) - No API key required.
-- **Language:** Python 3.10+
+## 🚀 Overview
 
-## ⚙️ Architecture & Logic
-The system follows a strict linear workflow to ensure data integrity:
+The **Multi-Agent Manufacturing System** is a web-based AI platform where multiple intelligent agents collaborate to solve manufacturing-related tasks such as:
 
-1. **Input:** User provides a manufacturing component (e.g., "Aerospace Grade Titanium").
-2. **Search & Source:** Researcher Agent performs real-time web scraping to identify 3 suppliers.
-3. **State Handoff:** The raw data is passed to the Writer Agent.
-4. **Synthesis:** Writer Agent applies a professional template and performs a risk assessment.
-5. **Output:** A structured `procurement_report.md` file is generated.
+✔ Supplier sourcing  
+✔ Cost comparison  
+✔ Data analysis  
+✔ Report generation  
 
-## 🚀 Getting Started
+Instead of using a single AI model, this system uses **specialized agents** with clearly defined roles, enabling modular, scalable, and realistic AI workflows.
 
-### 1. Installation
-```bash
-# Clone the repository
-git clone [https://github.com/pransu-singh/Multi-Agent-Manufacturing-System.git](https://github.com/pransu-singh/Multi-Agent-Manufacturing-System.git)
-cd multi_agent_manufacturing
+---
+
+## 🧠 System Architecture
+
+The system consists of the following agents:
+
+| Agent | Role |
+|------|------|
+| **Coordinator Agent** | Manages workflow & task routing |
+| **Researcher Agent** | Collects manufacturing/supplier data |
+| **Analyst Agent** *(optional)* | Evaluates and compares options |
+| **Writer Agent** | Generates structured reports |
+
+---
+
+## 🔄 Workflow
+
+```text
+User Query
+   ↓
+Coordinator Agent
+   ↓
+Researcher Agent → Data Collection
+   ↓
+Analyst Agent → Evaluation / Comparison
+   ↓
+Writer Agent → Structured Output
+   ↓
+User Dashboard
+
+✨ Features
+👤 User Features
+
+Ask manufacturing-related questions
+
+Supplier sourcing
+
+Cost comparison
+
+AI-generated reports
+
+Query history
+
+Download reports (PDF/CSV)
+
+🛠 Admin Features
+
+User management
+
+Query monitoring
+
+Report management
+
+Agent performance tracking
+
+System configuration
+
+🖥 Web Interface
+
+The platform includes:
+
+✔ Landing Page
+✔ Login / Signup
+✔ User Dashboard
+✔ Query History
+✔ Reports Page
+✔ Admin Dashboard
+
+🧰 Tech Stack
+🔹 Backend
+
+Python
+
+FastAPI / Flask
+
+LangChain / CrewAI
+
+🔹 Frontend
+
+HTML / CSS / JavaScript
+(or React for modern UI)
+
+🔹 AI / LLM
+
+OpenAI API / Groq / Gemini (Free Tier)
+
+🔹 Database
+
+SQLite / PostgreSQL
+
+🔹 Deployment
+
+Render / Railway / Replit (Free Tier)
+
+# Clone repository
+git clone https://github.com/Pransu-singh/Multi-Agent-Manufacturing-System.git
+
+# Navigate into project
+cd multi-agent-manufacturing
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # (Linux/Mac)
+venv\Scripts\activate     # (Windows)
 
 # Install dependencies
-pip install crewai langchain-groq langchain-community duckduckgo-search
+pip install -r requirements.txt
+
+📁 Project Structure
+├── backend/
+│   ├── agents/
+│   ├── tools/
+│   ├── main.py
+│
+├── frontend/
+│   ├── index.html
+│   ├── dashboard.html
+│   ├── styles.css
+│
+├── database/
+│
+├── requirements.txt
+└── README.md
