@@ -31,7 +31,7 @@ The system follows a strict linear workflow to ensure data integrity:
 ### 1. Installation
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/multi-agent-manufacturing.git](https://github.com/yourusername/multi-agent-manufacturing.git)
+git clone [https://github.com/pransu-singh/Multi-Agent-Manufacturing-System.git](https://github.com/pransu-singh/Multi-Agent-Manufacturing-System.git)
 cd multi_agent_manufacturing
 
 # Install dependencies
