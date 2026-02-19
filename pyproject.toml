@@ -1,0 +1,17 @@
+[project]
+name = "MFG Agent — AI Supplier Finder"
+version = "0.1.0"
+description = "A multi-agent system for manufacturing procurement research"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.12.0",
+    "crewai>=0.80.0",
+    "duckduckgo-search>=6.1.0",
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+    "groq>=0.9.0",
+    "litellm>=1.44.0",
+    "lxml>=5.0.0",
+    "requests>=2.31.0",
+]
